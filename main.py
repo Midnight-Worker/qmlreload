@@ -47,10 +47,12 @@ def reload_qml():
     new_item.setParentItem(view.contentItem())
 
     if current_item is not None:
-        current_item.deleteLater()
+        if isValid(current_item):
+            current_item.deleteLater()
+
+        current_item = None
 
     current_item = new_item
-
 
 reload_qml()
 
