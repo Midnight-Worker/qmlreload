@@ -14,7 +14,7 @@ Rectangle {
 
 		TextField {
 			id: nameInput
-			placeholderText: "Dein Name"
+			placeholderText: "Your Name"
 			Layout.preferredWidth: 250
 	
 		}
